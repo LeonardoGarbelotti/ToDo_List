@@ -4,7 +4,7 @@ import { ClipboardText, PlusCircle } from 'phosphor-react'
 import { ChangeEvent, FormEvent, useState } from 'react'
 
 export function TaskList() {
-  const [tasks, setTasks] = useState([''])
+  const [tasks, setTasks] = useState<string[]>([])
   const [newTaskText, setNewTaskText] = useState('')
 
   function handleCreateNewTask(event: FormEvent) {
@@ -48,14 +48,14 @@ export function TaskList() {
       <div className={styles.taskInfo}>
         <div className={styles.createdTasks}>
           <strong>Tarefas Criadas</strong>
-          <span>{tasks.length - 1}</span>
+          <span>{tasks.length}</span>
         </div>
         <div className={styles.tasksDone}>
           <strong>Concluídas</strong>
           <span>0</span>
         </div>
       </div>
-      {tasks.length !== 1 ? tasks.map(task => {
+      {tasks.length !== 0 ? tasks.map(task => {
         return (
           <Task
             key={task}
