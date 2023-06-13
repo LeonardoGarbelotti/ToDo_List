@@ -1,0 +1,117 @@
+.taskForm {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+
+  margin-top: calc(0px - 3.75rem);
+  margin-bottom: 4rem;
+}
+
+.taskForm input {
+  width: 100%;
+  background: var(--gray-500);
+  color: var(--gray-100);
+  border-radius: 8px;
+  border: 0;
+
+  font-size: 1rem;
+  line-height: 1.4;
+
+  padding: 1rem;
+
+}
+
+.taskForm button[type=submit] {
+  background: var(--blue-800);
+  display: flex;
+  align-items: center;
+  border: 0;
+  color: var(--gray-100);
+  cursor: pointer;
+
+  line-height: 1.4;
+  font-size: 0.875rem;
+  font-weight: bold;
+
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.taskForm button[type=submit]:hover {
+  background: var(--blue-400);
+}
+
+.taskForm button[type=submit] svg {
+  margin-left: 0.5rem;
+}
+
+.taskInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.createdTasks strong {
+  color: var(--blue-400);
+  font-size: 0.875rem;
+  padding-right: 0.5rem;
+}
+
+.createdTasks span {
+  font-size: 0.75rem;
+  font-weight: bold;
+
+  color: var(--gray-200);
+  background: var(--gray-400);
+
+  padding: 2px 0.5rem;
+  border-radius: 8px;
+}
+
+.tasksDone strong {
+  color: var(--purple-400);
+  font-size: 0.875rem;
+  padding-right: 0.5rem;
+}
+
+.tasksDone span {
+  font-size: 0.75rem;
+  font-weight: bold;
+
+  color: var(--gray-200);
+  background: var(--gray-400);
+
+  padding: 2px 0.5rem;
+  border-radius: 8px;
+}
+
+.contentList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.5rem;
+
+  border-top: 1px solid #333333;
+  padding: 4rem 1.5rem;
+
+  color: var(--gray-300);
+}
+
+.contentList svg {
+  opacity: 0.5;
+}
+
+.contentList strong {
+  padding-top: 1rem;
+  font-weight: bold;
+  line-height: 1.4;
+  font-size: 1rem;
+}
+
+.contentList p {
+  font-size: 1rem;
+  line-height: 1.4;
+}
